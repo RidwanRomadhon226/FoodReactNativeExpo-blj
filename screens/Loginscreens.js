@@ -3,7 +3,7 @@ import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import Inputs from "../components/Inputs";
 import Submits from "../components/Submits";
 
-const Loginscreens = () => {
+const Loginscreens = (props) => {
   return (
     <ScrollView style={{ backgroundColor: "white" }}>
       <View style={styles.container}>
@@ -28,7 +28,7 @@ const Loginscreens = () => {
           <Text style={styles.textBody}>Don't Have an account</Text>
           <Text
             style={[styles.textBody, { color: "blue" }]}
-            onPress={() => console.log("Ini adalag Sign up")}
+            onPress={() => props.navigation.navigate("SignupScreens")}
           >
             Sign Up
           </Text>
@@ -42,7 +42,6 @@ export default Loginscreens;
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
