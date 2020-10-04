@@ -21,7 +21,7 @@ const Loginscreens = (props) => {
           title="LOG IN"
           color="#0148a4"
           clidked={() => {
-            console.log("ini adalah Login");
+            props.navigation.navigate("container");
           }}
         />
         <View style={{ flexDirection: "row", marginVertical: 5 }}>
