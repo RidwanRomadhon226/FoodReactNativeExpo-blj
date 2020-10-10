@@ -12,7 +12,7 @@ const SignupScreens = (props) => {
           resizeMode="center"
           style={styles.image}
         />
-        <Text style={styles.textTitle}>Let's Get Started</Text>
+        <Text style={styles.textTitle}>Let's Get </Text>
         <Text style={styles.textBody}>
           Create an account to get all features
         </Text>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-end",
     marginBottom: 30,
   },
   image: {
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     marginVertical: 30,
   },
   textTitle: {
-    fontSize: 40,
+    fontSize: 50,
     fontFamily: "open-sans",
     marginVertical: 10,
   },

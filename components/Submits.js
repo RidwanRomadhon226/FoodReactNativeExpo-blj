@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   container: {
     width: "90%",
     height: 50,
-    borderColor: "blue",
+    borderColor: "red",
     borderRadius: 10,
     marginVertical: 10,
     borderWidth: 0,
